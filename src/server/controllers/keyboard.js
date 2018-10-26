@@ -1,6 +1,9 @@
 export default class TopicController {
   static get(req, res, cb) {
-    res.send({type: 'text', text: 'This is hell-bot'});
+    res.send({
+      type: "buttons",
+      buttons: ["Helps"]
+    });
     cb();
   }
 }
